@@ -24,6 +24,7 @@ const handleRegister = (req, res, db, bcrypt) => {
             joined: new Date()
           })
           .then(user => {
+            console.log(user);
             res.json(user[0]);
           })
       })
